@@ -1,0 +1,33 @@
+# Virtual environment
+venv/
+env/
+
+# Environment variables
+.env
+
+# GCP credentials
+credentials.json
+*.json
+
+# ChromaDB data
+chroma_db/
+
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploaded documents
+data/documents/*
+!data/documents/.gitkeep
+
