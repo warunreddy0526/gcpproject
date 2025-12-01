@@ -45,7 +45,7 @@ steps:
       - '--max-instances'
       - '10'
       - '--set-env-vars'
-      - 'GCP_REGION=${_REGION},CHROMA_PERSIST_DIR=/tmp/chroma_db'
+      - 'GCP_REGION=${_REGION},CHROMA_PERSIST_DIR=/tmp/chroma_db,GOOGLE_CLOUD_PROJECT=${PROJECT_ID},GCS_BUCKET_NAME=${PROJECT_ID}-rag-docs'
     id: 'deploy'
     waitFor: ['push-image']
 
